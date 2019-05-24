@@ -12,9 +12,10 @@ namespace DevOpsPractice.Test
         public void Test1()
         {
             var mockDependency = new Mock<ICalculate>();
-            mockDependency.Setup(x => x.Add(It.IsAny<int>(), It.IsAny<int>())).Returns(5);
+            mockDependency.Setup(x => x.Add(It.IsAny<int>(), It.IsAny<int>())).Returns(40);
             var cal = new CalulationsController(mockDependency.Object);
             var result = cal.Index(10, 30);
+            Assert.Equal(40,result);
         }
     }
 }
