@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DevOpsPractice.Controllers
 {
-    public class CalulationsController : Controller
+    public class CalulationsController
     {
         private readonly ICalculate _math;
         public CalulationsController(ICalculate math)
