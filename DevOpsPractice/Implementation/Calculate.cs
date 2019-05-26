@@ -12,5 +12,10 @@ namespace DevOpsPractice.Implementation
         {
             return a + b;
         }
+
+        public int SumOfIntegerList(IEnumerable<int> a)
+        {
+            return a.Sum();
+        }
     }
 }

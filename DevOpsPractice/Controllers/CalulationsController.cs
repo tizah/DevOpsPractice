@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DevOpsPractice.Controllers
 {
+    /// <summary>
+    /// //
+    /// </summary>
     public class CalulationsController
     {
         private readonly ICalculate _math;
@@ -20,6 +23,11 @@ namespace DevOpsPractice.Controllers
             return sum;
         }
 
-       
+        public int GetSumOfIntegers(IEnumerable<int> a)
+        {
+            return _math.SumOfIntegerList(a);
+        }
+
+
     }
 }
